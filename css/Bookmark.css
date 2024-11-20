@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+body {
+    background-color: #f7ecde;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 25%;
+    left: 38%;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::before {
+height: 50%;
+}
+
+.box {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+h2 { 
+    font-size: 25px;
+    font-family: "Righteous", cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+     background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-button {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    background-color: #d1512d;
+    color: #fff;
+}
+
+.my-button:hover {
+    background-color: #bb4120;
+    color: #fff;
+}
+
+label {
+    font-weight: 600;
+    color: #000;
+}
+
+th {
+    background-color: #f7f7f7 !important;
+    color: #352e28 !important;
+}

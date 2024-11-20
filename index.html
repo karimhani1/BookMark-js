@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./images/bookmark (1).png">
+    <link rel="stylesheet" href="./css/Font Awesome.css">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Bookmark.css">
+</head>
+
+<body>
+
+
+    <section class="all py-5">
+        <div class="container">
+            <h1 class="py-2 text-center">Bookmarker</h1>
+
+            <div class="box  p-3 py-4 mt-5">
+
+                <h2 class="text-center fw-bold">
+                    <span><i class="fa-solid fa-bookmark"></i></span>
+                    Bookmark your favorite sites
+                    <span><i class="fa-solid fa-bookmark"></i></span>
+                </h2>
+
+                <div class="site d-flex flex-column justify-content-center py-4">
+
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        Site Name
+                    </label>
+                    <input oninput="validationName()" type="text" placeholder="Bookmark Name" class="form-control"
+                        id="bookmarkName">
+                    <p id="msgName" class="alert alert-danger d-none">Site name must contain at least 3 characters</p>
+                </div>
+
+                <div class="site-url d-flex flex-column justify-content-center">
+
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link"></i>
+                        Site URL
+                    </label>
+                    <input oninput="validationUrl()" type="url" placeholder="Website URL" class="form-control"
+                        id="bookmarkURL">
+                    <p id="msgUrl" class="alert alert-danger d-none">Site URL must be a valid one</p>
+
+                </div>
+
+                <div class="text-center py-4">
+
+                    <button onclick="addName()" class="btn btn-submit my-button" id="submitBtn">Submit</button>
+
+                </div>
+            </div>
+
+            <table class="table my-table mt-4 text-center">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">Index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableContent"></tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
